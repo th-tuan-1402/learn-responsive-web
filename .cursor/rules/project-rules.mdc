@@ -1,0 +1,59 @@
+---
+alwaysApply: true
+---
+
+
+### 📁 **Cấu trúc thư mục**
+
+* Tên thư mục gốc: **`MSSV-HoTenSV-Web4`**
+* Trong đó có thư mục con: **`images`** chứa các hình ảnh được cung cấp.
+
+---
+
+### 🎯 **Yêu cầu chung**
+
+* **Chuẩn HTML5**
+* **Responsive** (giao diện linh hoạt trên nhiều thiết bị)
+
+---
+
+### ✅ **Nội dung cần tạo**
+
+#### **Website Scaal Coffee** (gồm 4 trang con):
+
+* `Home`
+* `Our story`
+* `Products`
+* `This week`
+
+#### **Website tổng hợp** gồm:
+
+##### Trang giới thiệu (1 trang):
+
+* Hiển thị **hình SV**, **mã số**, **họ tên**, **lớp**
+
+##### 6 trang áp dụng **các thẻ HTML cơ bản**:
+
+* Chủ đề gợi ý:
+
+  * Thơ về Mẹ
+  * Phú Quốc
+  * Định dạng văn bản
+  * Truyện ngụ ngôn
+  * Shop hoa tươi
+  * Việt Nam
+
+##### 4 trang áp dụng **thẻ `<table>`**:
+
+* Gợi ý nội dung:
+
+  * Chương trình học thiết kế đồ họa
+  * Dầu gội đầu Double Rich
+  * Trang Web Excite\@Home
+  * Trang Web Free.com
+
+##### 3 trang áp dụng **thẻ `<form>`** và các **thẻ điều khiển form**:
+
+* Trang đăng nhập
+* Phiếu đăng ký
+* Đặt tour
