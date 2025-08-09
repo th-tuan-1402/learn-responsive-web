@@ -1,0 +1,74 @@
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+    width: 60%;
+    margin: 0 auto;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+#top {
+    width: 100%;
+}
+#left {
+    float: left;
+    width: 20%;
+    height: 700px;
+    background: url(../images/logo_globe_a.gif) right bottom no-repeat;
+    vertical-align: top;
+}
+#left a {
+    display: list-item;
+    list-style: none;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border: black solid 1px;
+    border-right: 0px;
+    padding: 20px;
+    margin: 50px 0px 0px 50px;
+}
+#left a:hover {
+    background-color: #CCCC99;
+    margin: 50px 0px;
+    transition: 1s;
+}
+#left a.active {
+    background-color: #CC9933;
+}
+#left a.active:hover {
+    background-color: #CCCC99;
+}
+#content {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    height: 700px;
+    background: #CC9933 url(../images/logo_globe_b.gif) left bottom no-repeat;
+    line-height: 30px;
+    overflow: scroll;
+}
+#content a {
+    color: #197575;
+    font-weight: bold;
+    text-decoration: none;
+}
+#content a:hover {
+    text-decoration: underline;
+}
+#right {
+    float: right;
+    width: 30%;
+    height: 700px;
+    padding-top: 20px;
+    background-color: #CC9933;
+}
+.bigtext {
+    font-size: 30pt;
+}
+.bluetext {
+    color: #197575;
+}
