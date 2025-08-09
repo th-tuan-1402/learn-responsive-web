@@ -11,7 +11,7 @@
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
-header {
+#top {
     width: 100%;
 }
 
@@ -20,13 +20,13 @@ header {
     height: 700px;
 }
 
-nav {
+#left {
     flex: 20%;
     background: url(../images/logo_globe_a.gif) right bottom no-repeat;
     vertical-align: top;
 }
 
-nav a {
+#left a {
     display: list-item;
     list-style: none;
     font-weight: bold;
@@ -39,27 +39,27 @@ nav a {
     margin: 50px 0px 50px 50px;
 }
 
-nav a:hover {
+#left a:hover {
     background-color: #CCCC99;
     margin: 50px 0px;
     transition: 1s;
 }
 
-nav a.active {
+#left a.active {
     background-color: #CC9933;
 }
 
-nav a.active:hover {
+#left a.active:hover {
     background-color: #CCCC99;
 }
 
-section {
+#content {
     flex: 50%;
     padding: 20px 20px 200px 20px;
     background: #CC9933 url(../images/logo_globe_b.gif) left bottom no-repeat;
 }
 
-article {
+#text {
     width: 100%;
     height: 500px;
     line-height: 30px;
@@ -67,23 +67,23 @@ article {
     padding: 5px;
 }
 
-section a {
+#content a {
     color: #197575;
     font-weight: bold;
     text-decoration: none;
 }
 
-section a:hover {
+#content a:hover {
     text-decoration: underline;
 }
 
-aside {
+#right {
     flex: 30%;
     padding-top: 20px;
     background-color: #CC9933;
 }
 
-.bigtext {
+.bigetext {
     font-size: 30pt;
 }
 
@@ -102,12 +102,12 @@ aside {
         flex-direction: column;
     }
 
-    nav {
+    #left {
         flex: 100%;
         background-image: none;
     }
 
-    nav a {
+    #left a {
         display: inline-block;
         text-align: center;
         border: black solid 1px;
@@ -115,15 +115,15 @@ aside {
         margin: 10px;
     }
 
-    nav a:hover {
+    #left a:hover {
         margin: 0px;
     }
 
-    section {
+    #content {
         flex: 100%;
     }
 
-    aside {
+    #right {
         display: none;
     }
 
@@ -140,19 +140,19 @@ aside {
         font-size: 14px;
     }
 
-    nav {
+    #left {
         flex: 30%;
     }
 
-    nav a {
+    #left a {
         padding: 10px;
     }
 
-    section {
+    #content {
         flex: 70%;
     }
 
-    aside {
+    #right {
         display: none;
     }
 
