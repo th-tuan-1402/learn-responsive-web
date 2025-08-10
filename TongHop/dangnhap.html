@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form đăng nhập</title>
+    <link rel="stylesheet" href="styles/dangnhap.css">
+    <script src="js/dangnhap.js"></script>
+</head>
+<body>
+    <form onsubmit="return KiemTraNhapLieu();" autocomplete="off">
+        <div id="mytable">
+            <h1>Form đăng nhập</h1>
+            <div class="row">
+                <label for="txtUser" class="lb">Tên người dùng</label>
+                <input type="text" id="txtUser" class="txt" value="My Hanh">
+            </div>
+            <div class="row">
+                <label for="txtPass" class="lb">Mật khẩu</label>
+                <input type="password" id="txtPass" class="txt" value="123456">
+            </div>
+            <div style="text-align:center; display: flex; justify-content: center; gap: 16px;">
+                <button type="submit" class="btn">Đăng nhập</button>
+                <button type="button" class="btn" onclick="NhapLai()">Nhập lại</button>
+            </div>
+            <div id="lblThongBao" style="margin-top:10px;color:#f00;font-weight:bold;"></div>
+        </div>
+    </form>
+</body>
+</html>

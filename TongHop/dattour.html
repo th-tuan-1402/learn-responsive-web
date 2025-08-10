@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>ĐĂNG KÝ DU LỊCH</title>
+    <style>
+        body {
+            background: #fff;
+            font-family: Arial, Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .main-box {
+            width: 600px;
+            margin: 30px auto 0 auto;
+            border: 1.5px solid #0000cc;
+            background: #ffffcc;
+            box-sizing: border-box;
+        }
+        .title {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: #0000ff;
+            margin: 18px 0 12px 0;
+            font-family: Arial, Tahoma, sans-serif;
+            letter-spacing: 1px;
+        }
+        form {
+            margin: 0;
+            padding: 0 0 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 6px 8px;
+            vertical-align: middle;
+            font-size: 1em;
+        }
+        td.label {
+            width: 160px;
+            color: #0000cc;
+            font-weight: bold;
+            background: #ffffcc;
+            border: 1px solid #0000cc;
+        }
+        td.input {
+            background: #ffffe6;
+            border: 1px solid #0000cc;
+        }
+        input[type="text"], textarea, select {
+            width: 98%;
+            font-size: 1em;
+            padding: 3px 6px;
+            border: 1px solid #0000cc;
+            background: #ffffe6;
+            font-family: Arial, Tahoma, sans-serif;
+        }
+        textarea {
+            height: 60px;
+            resize: none;
+        }
+        .checkbox {
+            margin-left: 2px;
+        }
+        .radio {
+            margin-right: 12px;
+        }
+        .group-box {
+            background: #ffffe6;
+            border: none;
+            margin: 8px 0;
+            padding: 6px 8px;
+        }
+        .group-title {
+            font-weight: bold;
+            color: #0000cc;
+            margin-bottom: 2px;
+            background: #ffffcc;
+            position: relative;
+            top: 3px;
+            left: -120px;
+        }
+        .group-fields {
+            border: 1px solid #0000cc;
+            background: #ffffcc;
+            padding: 6px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .small-input {
+            width: 120px !important;
+            margin: 0 4px;
+            font-size: 1em;
+            padding: 2px 4px;
+            border: 1px solid #0000cc;
+            background: #ffffe6;
+            font-family: Arial, Tahoma, sans-serif;
+        }
+        .actions {
+            text-align: center;
+            padding: 10px 0 0 0;
+        }
+        .actions button {
+            background: #ffffcc;
+            color: #0000cc;
+            border: 1px solid #0000cc;
+            border-radius: 2px;
+            font-size: 1em;
+            font-weight: bold;
+            padding: 4px 24px;
+            cursor: pointer;
+        }
+        .actions button:hover {
+            background: #e6e6ff;
+        }
+        .success {
+            text-align: center;
+            color: #ff0000;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 8px 0 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">ĐĂNG KÝ DU LỊCH</div>
+    <div class="main-box">
+        <form id="dattourForm" onsubmit="return showSuccess(event)">
+            <table>
+                <tr>
+                    <td class="label">Họ tên</td>
+                    <td class="input"><input type="text" name="hoten"></td>
+                </tr>
+                <tr>
+                    <td class="label">Địa chỉ</td>
+                    <td class="input"><textarea name="diachi"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="label">Điện thoại</td>
+                    <td class="input"><input type="text" name="dienthoai"></td>
+                </tr>
+                <tr>
+                    <td class="label">Khách Việt Nam</td>
+                    <td class="input"><input type="checkbox" class="checkbox" name="vietname"></td>
+                </tr>
+                <tr>
+                    <td class="label">Chọn tour</td>
+                    <td class="input">
+                        <select name="tour">
+                            <optgroup label="Miền Bắc">
+                                <option>Hà Nội - Hạ Long - Sapa</option>
+                                <option>Hà Nội - Chùa Hương - Ninh Bình</option>
+                                <option>Hà Nội - Cát Bà - Tuần Châu</option>
+                            </optgroup>
+                            <optgroup label="Miền Trung">
+                                <option>Huế - Bạch Mã - Đà Nẵng</option>
+                                <option>Nha Trang - Đà Lạt</option>
+                                <option>Buôn Mê Thuột - Gia Lai - Kontum</option>
+                            </optgroup>
+                            <optgroup label="Miền Nam">
+                                <option>TpHCM - Cần Thơ - Cà Mau</option>
+                                <option>Phú Quốc - Côn Đảo</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Phương tiện</td>
+                    <td class="input">
+                        <label class="radio"><input type="radio" name="phuongtien" value="maybay"> Máy bay</label>
+                        <label class="radio"><input type="radio" name="phuongtien" value="xedulich"> Xe du lịch</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="2" style="padding:0;">
+                        <div class="group-box" style="display:flex; flex-direction:column; align-items:center; border:none;">
+                            <span class="group-title" style="display: inline-block; ">Số lượng đoàn khách</span>
+                            <div class="group-fields">
+                                <div style="color:#0000cc;font-weight:bold;">Người lớn</div>
+                                <input type="text" name="songuoilon" class="small-input">
+                                <span style="margin:0 12px;color:#0000cc;font-weight:bold;">Trẻ em</span>
+                                <input type="text" name="sotreem" class="small-input">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Ghi chú thêm</td>
+                    <td class="input"><textarea name="ghichu"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="2" style="text-align:center;">
+                        <button type="submit">Đồng ý</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div class="success" id="successMsg" style="display:none;">Bạn đã đăng ký thành công!!!</div>
+    </div>
+    <script>
+    function showSuccess(e) {
+        e.preventDefault();
+        document.getElementById('successMsg').style.display = 'block';
+        return false;
+    }
+    </script>
+</body>
+</html>

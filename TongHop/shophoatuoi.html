@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Hoa tươi Hạnh Phúc</title>
+    <link rel="icon" href="images/binh-hoa.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #fff url('images/nen-hoa-hong.jpg') no-repeat right bottom;
+            background-size: auto;
+            font-family: Times New Roman, Times, serif;
+            margin: 100px;
+            padding: 50px;
+        }
+        .main-box {
+            width: 1050px;
+            margin: 20px auto 0 auto;
+            background: transparent;
+            position: relative;
+        }
+        .header-title {
+            font-family: 'Pacifico', cursive;
+            color: #fff;
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 18px;
+            margin-top: 18px;
+            text-shadow: 0 0 8px #ff69b4, 0 0 16px #ff69b4, 0 0 2px #fff, 2px 2px 0 #ff69b4, -2px -2px 0 #ff69b4;
+            letter-spacing: 2px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        .left {
+            width: 340px;
+            min-width: 300px;
+        }
+        .left img {
+            width: 100%;
+            border-radius: 6px;
+        }
+        .right {
+            flex: 1;
+            padding-left: 30px;
+            padding-top: 10px;
+        }
+        .list-title {
+            color: #fff;
+            background: #ff3399;
+            font-weight: bold;
+            padding: 2px 12px;
+            border-radius: 4px;
+            font-size: 1.1em;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        .list-title2 {
+            color: #fff;
+            background: #ff3399;
+            font-weight: bold;
+            padding: 2px 12px;
+            border-radius: 4px;
+            font-size: 1.1em;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        .info-list {
+            margin: 0 0 18px 0;
+            padding: 0 0 0 24px;
+            font-size: 1.1em;
+        }
+        .info-list li {
+            margin-bottom: 2px;
+            list-style: none;
+            position: relative;
+            padding-left: 22px;
+        }
+        .info-list li:before {
+            content: '\273F';
+            color: #a000c0;
+            font-size: 1.1em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .contact-list {
+            margin: 0 0 18px 0;
+            padding: 0 0 0 24px;
+            font-size: 1.1em;
+        }
+        .contact-list li {
+            margin-bottom: 2px;
+            list-style: none;
+            position: relative;
+            padding-left: 10px;
+        }
+        .contact-list li:before {
+            content: '\2022';
+            color: #ff3399;
+            font-size: 1.2em;
+            position: absolute;
+            left: -12px;
+            top: 0.1em;
+        }
+        .contact-list .address {
+            font-weight: bold;
+            color: #000;
+            text-decoration: underline;
+        }
+        .copyright {
+            color: #a000c0;
+            font-size: 1em;
+            font-style: italic;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .copyright span {
+            color: #ff69b4;
+        }
+        @media (max-width: 900px) {
+            .main-box { width: 98vw; }
+            .container { flex-direction: column; }
+            .left, .right { width: 100%; min-width: 0; padding: 0; }
+            .right { padding-left: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <div class="header-title">Shop Hoa tươi Hạnh Phúc</div>
+        <div class="container">
+            <div class="left">
+                <img src="images/binh-hoa.jpg" alt="Bình hoa">
+            </div>
+            <div class="right">
+                <ol style="margin:0; padding:0 0 0 18px;">
+                    <li><span class="list-title">Giới thiệu</span>
+                        <ul class="info-list">
+                            <li>Thành lập ngày 01/07/2014</li>
+                            <li>Chuyên cung cấp các loại hoa tươi</li>
+                            <li>Có trên 20 cửa hàng bán lẻ tại TP.HCM</li>
+                            <li>Nhận kết giỏ hoa theo yêu cầu của khách hàng</li>
+                        </ul>
+                    </li>
+                    <li><span class="list-title2">Liên hệ</span>
+                        <ul class="contact-list">
+                            <li>Địa chỉ: <span class="address">245 Nguyễn Văn Cừ Q5, TP.HCM</span></li>
+                            <li>Điện thoại: (08)39044272</li>
+                            <li>Fax: (08)62619416 (Ext. 115)</li>
+                        </ul>
+                    </li>
+                </ol>
+                <div class="copyright">&copy; Copyright: <span>Công Ty Tin Hoc ABC</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

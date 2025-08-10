@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Định dạng văn bản</title>
+    <link rel="icon" href="images/bay-cuu.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Times New Roman, Times, serif;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 700px;
+            margin: 60px auto 0 auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #00cc00;
+            font-family: Times New Roman, Times, serif;
+            /* Đặt width và margin để căn giữa theo box code */
+            width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .mon {
+            margin-bottom: 18px;
+            font-size: 1.25em;
+            width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .mon b {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .mon .label {
+            font-style: italic;
+        }
+        .mon .hh {
+            color: red;
+        }
+        .mon .math {
+            color: #ff0000;
+            font-style: normal;
+            /*font-family: Arial, Helvetica, sans-serif;*/
+        }
+        .code {
+            background: #ccc;
+            border: none;
+            padding: 22px 0 22px 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.1em;
+            margin-top: 0;
+            margin-bottom: 0;
+            white-space: pre;
+            width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #0000cc;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Định dạng văn bản</h1>
+        <div class="mon"><b>Hóa học:</b> <span class="label">Nước:</span> <span class="hh">H<sub>2</sub>O</span> ; <span class="label">Axit Sunfuric:</span> <span class="hh">H<sub>2</sub>SO<sub>4</sub></span></div>
+        <div class="mon"><b>Toán học:</b> <span class="label">Phương trình bậc 2:</span> <span class="math">ax<sup>2</sup> + bx + c = 0</span></div>
+        <div class="mon"><b>Tin học:</b> <span class="label">Vòng lặp for:</span></div>
+        <div class="code">    int tong = 0;
+
+    for(int i = 1; i <= 10; i++)
+        tong += i;
+
+    printf("Tong cac so tu 1 => 10 la: %d\n",tong);</div>
+    </div>
+</body>
+</html>
